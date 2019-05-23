@@ -1,35 +1,35 @@
-<VAST version="4.0">
-    <Ad id="demo">
+<VAST version="3.0">
+    <Ad>
         <InLine>
-            <AdSystem version="1.0">Demo</AdSystem>
+            <AdSystem/>
             <AdTitle>
-                <![CDATA[Demo]]>
+                <![CDATA[ Sergej_Display_OMID_test_Video ]]>
             </AdTitle>
             <Description>
-                <![CDATA[Just a demonstration.]]>
+                <![CDATA[ Sergej_Display_OMID_test_Video ]]>
             </Description>
-            <Error>
-                <![CDATA[https://example.com/error?code=[ERRORCODE]&_=[CACHEBUSTING]]]>
-            </Error>
-            <Impression>
-                <![CDATA[https://example.com/impression?_=[CACHEBUSTING]]]>
-            </Impression>
             <Creatives>
                 <Creative>
                     <Linear>
-                        <Duration>00:00:17.320</Duration>
-                        <AdParameters>
-                            <![CDATA[{ "buttonForegroundColor": "white", "buttonBackgroundColor": "black" }]]>
-                        </AdParameters>
+                        <Duration>
+                            <![CDATA[ 00:00:15 ]]>
+                        </Duration>
+                        <TrackingEvents/>
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[ https://www.ogury.com/ ]]>
+                            </ClickThrough>
+                        </VideoClicks>
                         <MediaFiles>
-                            <MediaFile delivery="progressive" type="application/javascript" width="16" height="9" apiFramework="VPAID">
-                                <![CDATA[https://vasttester.iabtechlab.com/fixtures/vpaid/vpaid-example.js]]>
+                            <MediaFile type="application/vnd.apple.mpegurl">
+                                <![CDATA[
+https://medias.presage.io/medias/videos/92ad95b7-5b02-4706-8160-fe4fcce9aa66.mp4-transcoded/playlist.m3u8
+]]>
                             </MediaFile>
-                            <MediaFile delivery="progressive" type="video/webm" width="640" height="360">
-                                <![CDATA[https://assets.zentrick.io/h/he/heetb2ic/media/360p30.webm]]>
-                            </MediaFile>
-                            <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
-                                <![CDATA[https://assets.zentrick.io/h/he/heetb2ic/media/360p30.mp4]]>
+                            <MediaFile type="video/mp4">
+                                <![CDATA[
+https://medias.presage.io/medias/videos/92ad95b7-5b02-4706-8160-fe4fcce9aa66.mp4-transcoded/offline.mp4
+]]>
                             </MediaFile>
                         </MediaFiles>
                     </Linear>
