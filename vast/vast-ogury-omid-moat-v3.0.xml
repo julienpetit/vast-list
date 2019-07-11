@@ -51,9 +51,9 @@ https://medias.presage.io/medias/videos/92ad95b7-5b02-4706-8160-fe4fcce9aa66.mp4
                                 <![CDATA["iabtechlab-ogury"]]>
                             </VerificationParameters>
                         </Verification>
-                        <Verification vendor="moat.com-omsdkogurywebviewvideo183491256271">
+                        <Verification vendor="moat.com-ogurywebviewvideonew933350572641">
                             <JavaScriptResource apiFramework="omid" browserOptional="true">
-                                <![CDATA[https://z.moatads.com/omsdkogurywebviewvideo183491256271/moatvideo.js]]>
+                                <![CDATA[https://z.moatads.com/ogurywebviewvideonew933350572641/moatvideo.js]]>
                             </JavaScriptResource>
                             <VerificationParameters>
                                 <![CDATA[{"moatClientLevel1":"[advertiser_id]","moatClientLevel2":"[campaignid]","moatClientSlicer1":"[apikey]","moatClientSlicer2":"[sdk]"}]]>
