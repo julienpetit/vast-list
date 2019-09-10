@@ -1,16 +1,26 @@
 (function() {
 
-  function moveWebview(x, y) {
+  function getMaxSize() {
     var maxSize = window.mraid.getMaxSize();
+    var ratio = window.devicePixelRatio;
+
+    return {
+      height: maxSize.height / ratio,
+      width: maxSize.width / ratio,
+    }
+  }
+
+  function moveWebview(x, y) {
+    var maxSize = getMaxSize();
     maxSize.height -= 24;
-    window.mraid.ogyUpdateWebView('Main', {
+    window.mraid.ogyUpdateWebView('controller', {
       position: { x: x, y: y },
       size: maxSize
     });
   }
 
   function moveX50() {
-    var size = window.mraid.getMaxSize();
+    var size = getMaxSize();
     var x = Math.floor(size.width / 2) - 100;
 
     moveWebview(x, 0);
@@ -18,7 +28,7 @@
 
 
   function moveX50to100() {
-    var size = window.mraid.getMaxSize();
+    var size = getMaxSize();
     var x = Math.floor(size.width / 2) + 100;
 
     moveWebview(x, 0);
@@ -26,7 +36,7 @@
 
 
   function moveXfrom100() {
-    var size = window.mraid.getMaxSize();
+    var size = getMaxSize();
     var x = size.width + 100;
 
     moveWebview(x, 0);
@@ -34,7 +44,7 @@
 
 
   function moveY50() {
-    var size = window.mraid.getMaxSize();
+    var size = getMaxSize();
     var y = Math.floor(size.height / 2) - 100;
 
     moveWebview(0, y);
@@ -42,7 +52,7 @@
 
 
   function moveY50to100() {
-    var size = window.mraid.getMaxSize();
+    var size = getMaxSize();
     var y = Math.floor(size.height / 2) + 100;
 
     moveWebview(0, y);
@@ -50,7 +60,7 @@
 
 
   function moveYfrom100() {
-    var size = window.mraid.getMaxSize();
+    var size = getMaxSize();
     var y = size.height + 100;
 
     moveWebview(0, y);
@@ -60,7 +70,7 @@
     var button = document.createElement("button");
     button.id = id;
     button.innerHTML = text;
-    button.style.cssText = "padding: 10px;";
+    button.style.cssText = "padding: 20px;";
     button.addEventListener('click', callback);
     return button;
   }
