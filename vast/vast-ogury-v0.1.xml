@@ -1,0 +1,29 @@
+<VAST version="4.0">
+    <Ad id="demo">
+        <InLine>
+            <AdSystem version="1.0">Ogury</AdSystem>
+            <AdTitle>
+                <![CDATA[Ogury]]>
+            </AdTitle>
+            <Description>
+                <![CDATA[Ogury]]>
+            </Description>
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <Duration>00:00:15</Duration>
+                        <AdParameters>
+                            <![CDATA[{ "buttonForegroundColor": "white", "buttonBackgroundColor": "black" }]]>
+                        </AdParameters>
+                        <MediaFiles>
+                            <MediaFile delivery="progressive" type="video/mp4" width="1280" height="720">
+                                <![CDATA[https://medias.staging.cloud.ogury.io/medias/videos/66b09077-1297-4733-b4e9-263de2a0f4fe.mp4]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions/>
+        </InLine>
+    </Ad>
+</VAST>
