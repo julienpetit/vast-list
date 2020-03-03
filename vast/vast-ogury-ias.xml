@@ -1,0 +1,51 @@
+<VAST version="3.0">
+    <Ad>
+        <InLine>
+            <AdSystem/>
+            <AdTitle>
+                <![CDATA[ Ogury ]]>
+            </AdTitle>
+            <Description>
+                <![CDATA[ Ogury ]]>
+            </Description>
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <Duration>
+                            <![CDATA[ 00:00:15 ]]>
+                        </Duration>
+                        <TrackingEvents/>
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[https://www.ogury.com/]]>
+                            </ClickThrough>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile type="application/vnd.apple.mpegurl">
+                                <![CDATA[
+https://medias.presage.io/medias/videos/92ad95b7-5b02-4706-8160-fe4fcce9aa66.mp4-transcoded/playlist.m3u8
+]]>
+                            </MediaFile>
+                            <MediaFile type="video/mp4">
+                                <![CDATA[
+https://medias.presage.io/medias/videos/92ad95b7-5b02-4706-8160-fe4fcce9aa66.mp4-transcoded/offline.mp4
+]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="AdVerifications">
+                    <AdVerifications>
+                        <Verification vendor="integralads.com">
+                            <JavaScriptResource apiFramework="omid" browserOptional="true">
+                                <![CDATA[https://pixel.adsafeprotected.com/jload?anId=928046&advId=OguryFR&campId=all&pubId=[apikey]&chanId=[campaignid]&bundleid=[app_bundle]]]>
+                            </JavaScriptResource>
+                        </Verification>
+                    </AdVerifications>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>
