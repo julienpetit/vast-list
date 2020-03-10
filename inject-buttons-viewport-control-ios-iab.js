@@ -13,7 +13,7 @@
   function moveWebview(x, y) {
     var maxSize = getMaxSize();
     maxSize.height -= 24;
-    window.mraid.ogyUpdateWebView('Main', {
+    window.mraid.ogyUpdateWebView('controller', {
       position: { x: x, y: y },
       size: maxSize
     });
