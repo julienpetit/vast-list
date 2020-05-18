@@ -21,7 +21,7 @@
                             </ClickThrough>
                         </VideoClicks>
                         <MediaFiles>
-                            <MediaFile type="video/mp4">
+                            <MediaFile type="video/mp4" delivery="progressive" width="1440" height="1080">
                                 <![CDATA[
 https://medias.presage.io/medias/videos/92ad95b7-5b02-4706-8160-fe4fcce9aa66.mp4-transcoded/offline.mp4
 ]]>
